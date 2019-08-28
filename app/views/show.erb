@@ -1,0 +1,10 @@
+<h1> My New Recipe Info: </h1>
+
+Recipe Name: <%= @recipe.name %> <br>
+Recipe Ingredients: <%= @recipe.ingredients %> <br>
+Recipe Cook Time:  <%= @recipe.cook_time %> <br>
+
+<form method="POST" action="/recipes/<%=@recipe.id%>">
+<input id="hidden" type="hidden" name="_method" value="DELETE">
+<input type="submit" value="delete">
+</form>
